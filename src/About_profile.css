@@ -1,3 +1,10 @@
-.about {
-  display: flex;
+
+
+.about__image {
+  z-index: 100;
+}
+.about__image > img {
+  border-radius: 5px;
+  height: 200px;
+  width: auto;
 }
