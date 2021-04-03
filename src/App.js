@@ -1,13 +1,10 @@
-import Nav from './Nav'
-import Header from './header'
-import About from './About_profile.jsx'
+
+import Calculator from './Component/Calculator'
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Header />  
-      <About/>
+      <Calculator />
     </div>
   );
 }
