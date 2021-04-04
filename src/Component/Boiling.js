@@ -1,12 +1,9 @@
 
 function Boiling (props){
-    if(props.celcias >= 100){
+    if(props.temp >= 100){
         return <p>The water would boil.</p>
     }
-    else if(props.celcias < 100){
-        return <p>The water would not boil.</p>
-    }
-    return <p></p>
+    return <p>The water would not boil.</p>
 }
 
 export default Boiling

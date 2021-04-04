@@ -4,30 +4,16 @@ const scaleName = {
   c: "Celcias",
   f: "Fahrenheit",
 };
-class Calculator extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      temparature: "",
-    };
-  }
-  handeTemp = (e) => {
-    this.setState({
-      temparature: e.target.value,
-    });
-  };
-  render() {
-    const { temparature } = this.state;
-    const {scale} = this.props
+function Calculator (props) {
+    const {temp, scale, changeTemp} = props
     return (
       <div>
         <fieldset>
           <legend>Enter Your Temparature {scaleName[scale]}:</legend>
-          <input type="text" value={temparature} onChange={this.handeTemp}/>
+          <input type="text" value={temp} onChange={(e)=>changeTemp(e, scale)}/>
         </fieldset>
       </div>
     );
-  }
 }
 
 export default Calculator;
