@@ -8,15 +8,17 @@ function Book (props){
         width:"300px",
         margin:"20px",
         borderRadius:"10px",
+        display:"inlineBlock",
+        textAlign: "center",
     }
     return(
         <div style={boxStyle}>
-            <input
+        <input
           type="text"
           onChange={props.inputChange}
           value={props.title}
         />
-            <h3 onClick={props.change}>Title: {props.title}</h3>
+            <h3 onClick={props.change}>{props.title}</h3>
             <p>Writer: {props.writer}</p>
         </div>
     )

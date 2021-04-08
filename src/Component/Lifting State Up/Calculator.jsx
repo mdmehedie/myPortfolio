@@ -1,6 +1,6 @@
 import React from "react";
 import InputTemparature from "./InputTempatarure";
-import Boiling from "./Boiling";
+import Boiling from "./Lifting State Up/Boiling";
 
 function toCelcias(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;

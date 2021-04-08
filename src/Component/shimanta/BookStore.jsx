@@ -43,7 +43,6 @@ class BookStrore extends React.Component {
     });
     return (
       <div>
-        <h1>Book Strore</h1>
         <button
           onClick={() => {
             this.changeTitle("One Eighty Nine");
